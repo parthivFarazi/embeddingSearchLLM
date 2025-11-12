@@ -82,7 +82,10 @@ Processing line 4: 'Birds of a feather flock together.'
 407121: 'Birds of a feather flock together.' — English proverb
 397140: 'Birds of a feather will flock together.' — Minsheu
 52707:  'Find your flock and fly.' — Jennifer Coletta
+```
+
 Final indices (recent_found_indices.txt):
+```bash
 414986
 408814
 481488
