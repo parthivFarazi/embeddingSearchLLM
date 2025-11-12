@@ -1,0 +1,36 @@
+# -----------------------------
+# Core deep learning stack
+# -----------------------------
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# -----------------------------
+# Sentence Transformers & Transformers
+# -----------------------------
+sentence-transformers==5.1.0
+transformers==4.50.0  # Minimum version for Gemma3 support
+huggingface-hub>=0.34.0,<1.0
+sentencepiece==0.1.99
+
+# -----------------------------
+# FAISS (GPU)
+# -----------------------------
+faiss-gpu==1.7.2
+
+# -----------------------------
+# Numerical & Data Science libraries
+# -----------------------------
+numpy==1.26.4
+scikit-learn==1.5.2
+scipy==1.14.1
+tqdm==4.67.1
+nltk==3.9.1
+
+# -----------------------------
+# Utility libraries
+# -----------------------------
+typing-extensions==4.12.2
+requests==2.32.3
+filelock==3.16.1
+packaging==24.2

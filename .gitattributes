@@ -1,0 +1,2 @@
+quotes.db filter=lfs diff=lfs merge=lfs -text
+quotes.index filter=lfs diff=lfs merge=lfs -text
