@@ -5,6 +5,7 @@
 This project implements a **semantic vector search system** over a large dataset of quotes (~493,000 total), using **Hugging Face sentence embeddings** and a **FAISS** vector index for efficient similarity retrieval.  
 
 It was executed on **Georgia Tech’s PACE supercomputing cluster**, leveraging GPU acceleration and batch job scheduling with **SLURM**.  
+
 The workflow demonstrates how large-scale text embeddings can be computed, indexed, and queried on distributed compute systems — replicating the foundation of modern search and recommendation engines.
 
 ---
