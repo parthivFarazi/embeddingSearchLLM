@@ -113,13 +113,13 @@ Final indices (recent_found_indices.txt):
 
 ## 🧾 Key Files
 ### File	Description
-- make_index.py	Builds the FAISS index and SQLite database
-- find_quote.py	Searches for top-k nearest quotes
-- job_gpu_make_index.sh	SLURM job for index creation
-- job_gpu_find_quote.sh	SLURM job for query evaluation
-- requirements.txt	Required Python packages
-- recent_found_indices.txt	Output of retrieved quote indices
-- input.txt	Input quotes for semantic search
+- `make_index.py`	→ Builds the FAISS index and SQLite database
+- `find_quote.py`	→ Searches for top-k nearest quotes
+- `job_gpu_make_index.sh`	→ SLURM job for index creation
+- `job_gpu_find_quote.sh` → SLURM job for query evaluation
+- `requirements.txt` → Required Python packages
+- `recent_found_indices.txt` → Output of retrieved quote indices
+- `input.txt` → Input quotes for semantic search
 
 ---
 
