@@ -53,15 +53,17 @@ Memory optimization
 To prevent CUDA fragmentation:
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 ```
+---
 
-🧩 Models Used
+## 🧩 Models Used
 Model	Purpose	Notes
 google/embeddinggemma-300m	Text embedding model	Compact and GPU-efficient
 sentence-transformers	Embedding pipeline framework	Provides batching & normalization
 faiss-gpu	Vector database	Enables sub-millisecond similarity search
 
+---
 
-📊 Dataset
+## 📊 Dataset
 Source: CSV of ~493 k English quotes and their authors.
 Each row was embedded into a 768-dimensional vector and indexed via FAISS.
 
@@ -91,20 +93,25 @@ Final indices (recent_found_indices.txt):
 481488
 397140
 ```
+---
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 - Language: Python 3.10
 - Libraries: sentence-transformers, faiss-gpu, huggingface_hub, sqlite3
 - Hardware: NVIDIA H100 GPU (PACE Cluster)
 - Tools: SLURM, Conda/venv, PACE OnDemand
 
-🚀 Results
+---
+
+## 🚀 Results
 - ✅ Embedded and indexed ~493 k quotes in ~25 minutes
 - ✅ Queried multiple quotes with < 0.1 s latency per query
 - ✅ Learned GPU memory management, tokenized auth, and HPC job orchestration
+  
+---
 
-🧾 Key Files
-File	Description
+## 🧾 Key Files
+### File	Description
 - make_index.py	Builds the FAISS index and SQLite database
 - find_quote.py	Searches for top-k nearest quotes
 - job_gpu_make_index.sh	SLURM job for index creation
@@ -113,7 +120,9 @@ File	Description
 - recent_found_indices.txt	Output of retrieved quote indices
 - input.txt	Input quotes for semantic search
 
-💡 Learnings
+---
+
+## 💡 Learnings
 - Managing GPU memory on large transformer models
 - Using Hugging Face Hub tokens securely in HPC environments
 - Efficient batching and FAISS indexing for large datasets
