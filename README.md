@@ -93,28 +93,29 @@ Final indices (recent_found_indices.txt):
 ```
 
 🧰 Tech Stack
-Language: Python 3.10
-Libraries: sentence-transformers, faiss-gpu, huggingface_hub, sqlite3
-Hardware: NVIDIA H100 GPU (PACE Cluster)
-Tools: SLURM, Conda/venv, PACE OnDemand
+- Language: Python 3.10
+- Libraries: sentence-transformers, faiss-gpu, huggingface_hub, sqlite3
+- Hardware: NVIDIA H100 GPU (PACE Cluster)
+- Tools: SLURM, Conda/venv, PACE OnDemand
+
 🚀 Results
-✅ Embedded and indexed ~493 k quotes in ~25 minutes
-✅ Queried multiple quotes with < 0.1 s latency per query
-✅ Learned GPU memory management, tokenized auth, and HPC job orchestration
+- ✅ Embedded and indexed ~493 k quotes in ~25 minutes
+- ✅ Queried multiple quotes with < 0.1 s latency per query
+- ✅ Learned GPU memory management, tokenized auth, and HPC job orchestration
 
 🧾 Key Files
 File	Description
-make_index.py	Builds the FAISS index and SQLite database
-find_quote.py	Searches for top-k nearest quotes
-job_gpu_make_index.sh	SLURM job for index creation
-job_gpu_find_quote.sh	SLURM job for query evaluation
-requirements.txt	Required Python packages
-recent_found_indices.txt	Output of retrieved quote indices
-input.txt	Input quotes for semantic search
+- make_index.py	Builds the FAISS index and SQLite database
+- find_quote.py	Searches for top-k nearest quotes
+- job_gpu_make_index.sh	SLURM job for index creation
+- job_gpu_find_quote.sh	SLURM job for query evaluation
+- requirements.txt	Required Python packages
+- recent_found_indices.txt	Output of retrieved quote indices
+- input.txt	Input quotes for semantic search
 
 💡 Learnings
-Managing GPU memory on large transformer models
-Using Hugging Face Hub tokens securely in HPC environments
-Efficient batching and FAISS indexing for large datasets
-SLURM scripting for multi-stage GPU workflows
+- Managing GPU memory on large transformer models
+- Using Hugging Face Hub tokens securely in HPC environments
+- Efficient batching and FAISS indexing for large datasets
+- SLURM scripting for multi-stage GPU workflows
 
